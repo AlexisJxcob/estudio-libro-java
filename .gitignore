@@ -1,0 +1,25 @@
+# Compilación y temporales de Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
+
+# IntelliJ IDEA (Ignora toda la carpeta para evitar conflictos de configuración personal)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# VS Code y OS
+.vscode/
+.DS_Store
+Thumbs.db
