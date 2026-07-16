@@ -38,5 +38,9 @@ public class EstructuraArrayList {
         // buscar
         System.out.println(names.contains("jacob")); // sensible a la mayusculas
         System.out.println(names.contains("Jacob"));
+
+        // limpiar array
+        names.clear();
+        System.out.println(names);
     }
 }
