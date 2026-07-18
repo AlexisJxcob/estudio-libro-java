@@ -1,35 +1,41 @@
 public class Person {
 
-    // atributos
-    // se acceden con Person.
-    private final String name;
+    // Atributos privados (Encapsulación)
+    private final String name; // final: no se puede modificar después de crearse
     private int age;
-    final private String dni; // sirve para que no se modifique en otros lados, ya que es un dato sensible
+    private final String dni;  // final: dato sensible que no debe cambiar
 
-    // constructores
-    // es un mecanismo de inicialización
+    // Constructor: mecanismo de inicialización
     public Person(String name, int age, String dni) {
-        this.name = name; // Con this. Llamamos al age y name de la class person algo asi como el padre
-        this.setAge(age); // se pone asi porque hay un criterio para la edad
+        this.name = name; // 'this.name' es el atributo de arriba, 'name' es el parámetro que entra
+        this.setAge(age); // Usamos el setter para aplicar la validación de edad desde el inicio
         this.dni = dni;
     }
 
-    // functions métodos
+    // Métodos (Comportamiento)
     public void sayHello() {
-        System.out.println("hola, soy " + name + " y tengo " + age + " años y mi numero de dni es: " + dni);
+        System.out.println("Hola, soy " + name + " y tengo " + age + " años. Mi DNI es: " + dni);
     }
 
-    // getter
-    public String getDni(){
-        return dni; // permite acceder al dato desde otras partes
+    // Getters: permiten acceder a los datos de forma segura
+    public String getDni() {
+        return dni;
     }
 
-    // setter
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    // Setters: permiten actualizar la información con reglas
     public void setAge(int age) {
         if (age > 0) {
             this.age = age;
         } else {
-            System.out.println("Edad no valida");
+            System.out.println("Edad no válida");
         }
     }
 }
