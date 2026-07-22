@@ -10,7 +10,7 @@ public class Classes {
         // person.age = 21;
         person.sayHello();
         System.out.println(person.getDni());
-        System.out.println(person.setAge(22););
+        // System.out.println(person.setAge(22)); se arreglo esto
     }
 
 }
