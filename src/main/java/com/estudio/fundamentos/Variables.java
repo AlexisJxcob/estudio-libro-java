@@ -1,3 +1,5 @@
+package com.estudio.fundamentos;
+
 public class Variables {
 
     public static void main(String[] args) {
@@ -40,6 +42,11 @@ public class Variables {
 
         System.out.print("Dato char: ");
         System.out.println(charDato);
-
+            
+        // se agrego luego de java la palabra reserva 'var'
+        
+        // el tipo de dato es inferido 
+        var edad = 17;
+        System.out.println(edad);
     }
 }

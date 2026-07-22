@@ -1,3 +1,5 @@
+package com.estudio.fundamentos;
+
 public class Operadores {
 
     public static void main(String[] args) { // Punto de entrada del programa

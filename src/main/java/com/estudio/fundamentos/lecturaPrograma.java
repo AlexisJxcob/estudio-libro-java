@@ -1,3 +1,5 @@
+package com.estudio.fundamentos;
+
 import java.util.Scanner;
 
 public class lecturaPrograma {
