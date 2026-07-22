@@ -1,3 +1,5 @@
+package com.estudios.poo;
+
 public class AccessModifiers {
 
     public static void main(String[] args) {

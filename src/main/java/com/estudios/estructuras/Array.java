@@ -1,3 +1,5 @@
+package com.estudios.estructuras;
+
 public class Array {
     public static void main(String[] args) {
         String[ ] arrayString = new String[7]; // elementos del 0 al 6

@@ -1,3 +1,5 @@
+package com.estudios.control;
+
 import java.util.Scanner;
 public class BucleDoWhile {
     public static void main(String[] args) {

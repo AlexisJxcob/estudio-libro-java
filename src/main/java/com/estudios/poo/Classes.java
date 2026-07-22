@@ -1,3 +1,5 @@
+package com.estudios.poo;
+
 public class Classes {
     // las clases son una especie de plantilla basicamente un objeto
     static void main() {
@@ -10,7 +12,6 @@ public class Classes {
         // person.age = 21;
         person.sayHello();
         System.out.println(person.getDni());
-        // System.out.println(person.setAge(22)); se arreglo esto
     }
 
 }

@@ -1,3 +1,5 @@
+package com.estudio.fundamentos;
+
 // El 'package' indica la carpeta donde está guardado este archivo.
 // En Java, si un archivo está dentro de una carpeta (en este caso 'libro'),
 // debes declarar obligatoriamente a qué paquete pertenece en la primera línea.

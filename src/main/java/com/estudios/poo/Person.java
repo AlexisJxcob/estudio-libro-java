@@ -1,3 +1,5 @@
+package com.estudios.poo;
+
 public class Person {
 
     // Atributos privados (Encapsulación)

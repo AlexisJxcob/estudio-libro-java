@@ -1,3 +1,5 @@
+package com.estudios.estructuras;
+
 import java.util.HashMap;
 
 public class EstructuraMaps {

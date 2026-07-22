@@ -1,3 +1,5 @@
+package com.estudios.poo;
+
 public class Herencia {
 
   // 1. El método main corregido con su firma oficial de Java

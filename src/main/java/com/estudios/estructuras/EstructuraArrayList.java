@@ -1,3 +1,5 @@
+package com.estudios.estructuras;
+
 import java.util.ArrayList;
 
 // es mas flexible al Array

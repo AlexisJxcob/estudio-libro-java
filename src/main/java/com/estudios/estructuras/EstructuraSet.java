@@ -1,3 +1,5 @@
+package com.estudios.estructuras;
+
 import java.util.HashSet;
 // set es desordenada
 public class EstructuraSet {
