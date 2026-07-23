@@ -18,6 +18,8 @@ public class Abstraction {
         public void Sleep() {
             System.out.println("EL animal duerme");
         }
+        
+        public abstract void Sound();
     }
     public static class Dog extends Animal {
 
@@ -25,9 +27,20 @@ public class Abstraction {
         public void Sleep() {
             System.out.println("El perro duerme");
         }
+
+        @Override
+        public void Sound() {
+            System.out.println("El perro hace Guau");
+        }
+        
         
     }
     public static class Cat extends Animal {
+
+        @Override
+        public void Sound() {
+            System.out.println("EL gato hace miau");
+        }
         
     }
     
