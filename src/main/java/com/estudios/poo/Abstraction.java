@@ -48,6 +48,26 @@ public class Abstraction {
         
     }
     
+    
+    // estas 2 clases tienen 2 cosas similares
+    public static class Bird extends Animal {
+
+        @Override
+        public void Sound() {
+            System.out.println("EL ave hace pio pio");
+        }
+
+    }
+    
+    public static class Bat extends Animal {
+
+        @Override
+        public void Sound() {
+            System.out.println("EL ave hace iam batman");
+        }
+
+    }
+    
     // - interface
     
     public interface Fliying {
