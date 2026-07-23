@@ -6,9 +6,22 @@ public class PolymorphismExercises {
 
     public static void main(String[] args) {
         List<Animal> animales = List.of(new Dog(), new Cat(), new Cow());
-        
+
         for (Animal animal : animales) {
             animal.makeSound();
+
+            // --- Ejercicio 2 ---
+            // Creamos una lista de figuras (Shape) con distintas subclases y parámetros
+            List<Shape> figuras = List.of(
+                    new Circle(5.0), // Círculo con radio 5
+                    new Rectangle(4.0, 6.0), // Rectángulo 4x6
+                    new Circle(2.5) // Otro círculo con radio 2.5
+            );
+
+            // Recorremos la lista e imprimimos el área de cada figura
+            for (Shape figura : figuras) {
+                System.out.println("El área de la figura es: " + figura.calculateArea());
+            }
         }
     }
 
@@ -44,23 +57,47 @@ public class PolymorphismExercises {
         }
 
     }
-}
 
-// 2. Crea una clase Shape con el método calculateArea(). Luego implementa subclases Circle y Rectangle con sus propias fórmulas. Usa una lista de Shape para recorrer e imprimir el área de varias figuras.
+// --- Clases Ejercicio 2 ---
+public static class Shape {
 
-public static class Shape{
-    public double calculateArea(){
-        return 0.0;
+        public double calculateArea() {
+            return 0.0; // Valor por defecto
+        }
     }
+
+    public static class Circle extends Shape {
+
+        private double radius;
+
+        public Circle(double radius) {
+            this.radius = radius;
+        }
+
+        @Override
+        public double calculateArea() {
+            return Math.PI * radius * radius; // math.PI viene en java.lang
+        }
+    }
+
+    public static class Rectangle extends Shape {
+
+        private double width;
+        private double height;
+
+        public Rectangle(double width, double height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        @Override
+        public double calculateArea() {
+            return width * height;
+        }
+    }
+
 }
 
-public static class Circle{
-    
-}
-
-public static class Rectangle {
-
-}
 // 3. Crea una clase Printer con varios métodos print() sobrecargados que acepten diferentes tipos de parámetros (String, int, double). Llama a cada uno desde main.
 // 4. Crea una clase Greeter con dos métodos greet(): uno que salude con “Hello”, y otro que reciba un nombre y salude con “Hello, [nombre]”.
 // 5. Crea una clase Vehicle con un método start(). Luego crea Car, Bike y Truck que sobrescriban ese método. Recorre una lista ArrayList<Vehicle> para llamar a start() en cada uno.
