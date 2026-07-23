@@ -1,9 +1,5 @@
 package com.estudios.poo;
 
-/*
-Clase 66 - Ejercicios: Abstracción
-Vídeo: https://youtu.be/JOAqpdM36wI?t=26892
- */
 public class AbstractionExercises {
 
     public static void main(String[] args) {
