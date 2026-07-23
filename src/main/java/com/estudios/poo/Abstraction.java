@@ -7,9 +7,13 @@ public class Abstraction {
         // var animalito = new Animal(); una clase abstracta no puede ser instanciada
         var doggy = new Dog();
         doggy.Sleep(); // si es una herencia si se puede instanciar
+        doggy.Sound();
         
         var kitty = new Cat();
         kitty.Sleep();
+        kitty.Sound();
+        
+        // - interface
     }
 
     // clase abstracta
@@ -44,5 +48,10 @@ public class Abstraction {
         
     }
     
-    // hay que terminar el curso de moure
+    // - interface
+    
+    public interface Fliying {
+        // no habra implementaciones
+        void fly();
+    }
 }
